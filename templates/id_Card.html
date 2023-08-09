@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated ID Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0f0c29;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .card {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      border: 2px solid #45a049;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .field {
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .value {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="field">
+      <span class="label">Name:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.name}}</span>{% endfor %}
+    </div>
+    <div class="field">
+      <span class="label">Age:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.age}}</span>{% endfor %}
+    </div>
+    <div class="field">
+      <span class="label">Email:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.email}}</span>{% endfor %}
+    </div>
+    <div class="field">
+      <span class="label">Address:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.address}}</span>{% endfor %}
+    </div>
+    <div class="field">
+      <span class="label">College:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.college}}</span>{% endfor %}
+    </div>
+    <div class="field">
+      <span class="label">Country:</span>
+      {% for i in stu_id_obj %}<span class="value">{{i.country}}</span>{% endfor %}
+    </div>
+  </div>
+</body>
+
+</html>

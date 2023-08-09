@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.id-card {
+  width: 350px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.id-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.id-card-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.id-card-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.id-card-info {
+  margin-top: 20px;
+}
+
+.id-card-info p {
+  margin: 10px 0;
+}
+
+.id-card-info strong {
+  width: 100px;
+  display: inline-block;
+}
+
+/* You can customize the colors, fonts, and other styles here */
+
+
+  </style>
+</head>
+<body>
+  <div class="id-card">
+    <div class="id-card-header">
+      <img src="your-logo.png" alt="Logo">
+      <h1>ID Card</h1>
+    </div>
+    <div class="id-card-info">
+      <p><strong>Name:</strong> <span id="name">John Doe</span></p>
+      <p><strong>Age:</strong> <span id="age">30</span></p>
+      <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+      <p><strong>Address:</strong> <span id="address">123 Main St, City</span></p>
+      <p><strong>College:</strong> <span id="college">University XYZ</span></p>
+      <p><strong>Country:</strong> <span id="country">Country ABC</span></p>
+    </div>
+  </div>
+</body>
+</html>
